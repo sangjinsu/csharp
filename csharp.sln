@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp", "csharp\csharp.csproj", "{EAE06511-1825-4E7E-A729-CE692BD91E2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp2", "..\csharp2\csharp2\csharp2.csproj", "{ADAF9664-C552-495F-9CDD-359186ED7211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp3", "..\csharp3\csharp3\csharp3.csproj", "{FF9FFD8B-F796-4A1A-A2D0-46520CCFC72C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{EAE06511-1825-4E7E-A729-CE692BD91E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAE06511-1825-4E7E-A729-CE692BD91E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAE06511-1825-4E7E-A729-CE692BD91E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADAF9664-C552-495F-9CDD-359186ED7211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADAF9664-C552-495F-9CDD-359186ED7211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADAF9664-C552-495F-9CDD-359186ED7211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADAF9664-C552-495F-9CDD-359186ED7211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF9FFD8B-F796-4A1A-A2D0-46520CCFC72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF9FFD8B-F796-4A1A-A2D0-46520CCFC72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF9FFD8B-F796-4A1A-A2D0-46520CCFC72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF9FFD8B-F796-4A1A-A2D0-46520CCFC72C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
