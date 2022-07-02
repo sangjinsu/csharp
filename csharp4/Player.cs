@@ -8,51 +8,19 @@ public enum PlayerType
     Mage = 3
 }
 
-class Player
+class Player : Creature
 {
-    protected PlayerType _type;
-    protected int _hp;
-    protected int _attack;
+    protected PlayerType type;
 
-    protected Player(PlayerType type)
+    protected Player(PlayerType type) : base(CreatureType.Player)
     {
-        _type = type;
-    }
-
-    public void SetInfo(int hp, int attack)
-    {
-        _hp = hp;
-        _attack = attack;
-    }
-
-    public int GetHp()
-    {
-        return _hp;
-    }
-
-    public int GetAttack()
-    {
-        return _attack;
-    }
-
-    public bool IsDead()
-    {
-        return _hp <= 0;
-    }
-
-    public void OnDamaged(int damage)
-    {
-        _hp -= damage;
-        if (_hp < 0)
-        {
-            _hp = 0;
-        }
+        this.type = type;
     }
 }
 
 class Knight : Player
 {
-    Knight() : base(PlayerType.Knight)
+    public Knight() : base(PlayerType.Knight)
     {
         SetInfo(100, 10);
     }
@@ -60,7 +28,7 @@ class Knight : Player
 
 class Archer : Player
 {
-    Archer() : base(PlayerType.Archer)
+    public Archer() : base(PlayerType.Archer)
     {
         SetInfo(75, 13);
     }
@@ -68,7 +36,7 @@ class Archer : Player
 
 class Mage : Player
 {
-    Mage() : base(PlayerType.Mage)
+    public Mage() : base(PlayerType.Mage)
     {
         SetInfo(60, 20);
     }
