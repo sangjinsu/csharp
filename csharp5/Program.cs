@@ -47,7 +47,5 @@ class Program
         {
             Console.WriteLine(score);
         }
-
-        // Exercise 01
     }
 }

@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp4", "csharp4\csharp4.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp5", "csharp5\csharp5.csproj", "{254F247B-100E-4356-80F4-DACF1FBFF1B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp6", "csharp6\csharp6.csproj", "{030B347C-74F6-4DD2-B0D9-0B7FABD09696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grammer", "grammer\grammer.csproj", "{1770A639-4BBF-4B4D-8DB0-022FB6B6D4C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{254F247B-100E-4356-80F4-DACF1FBFF1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{254F247B-100E-4356-80F4-DACF1FBFF1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{254F247B-100E-4356-80F4-DACF1FBFF1B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{030B347C-74F6-4DD2-B0D9-0B7FABD09696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{030B347C-74F6-4DD2-B0D9-0B7FABD09696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{030B347C-74F6-4DD2-B0D9-0B7FABD09696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{030B347C-74F6-4DD2-B0D9-0B7FABD09696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1770A639-4BBF-4B4D-8DB0-022FB6B6D4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1770A639-4BBF-4B4D-8DB0-022FB6B6D4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1770A639-4BBF-4B4D-8DB0-022FB6B6D4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1770A639-4BBF-4B4D-8DB0-022FB6B6D4C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
