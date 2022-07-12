@@ -37,10 +37,62 @@
             public int Mana { get; set; }
         }
 
+        // Delegate
+        delegate int OnClicked();
+        // 반환 int 입력 void 
+        // OnClicked 이 delegate 형식의 이름
+
+        static void ButtonPressed(OnClicked clickedFunction)
+        {
+            clickedFunction();
+        }
+
+        static int TestDelegate()
+        {
+            Console.WriteLine();
+            return 0;
+        }
+
+        // Event Observer Pattern
+        class InputManager
+        {
+            public delegate void OnInputKey();
+
+            public event OnInputKey InputKey;
+
+            public void Update()
+            {
+                if (Console.KeyAvailable == false)
+                {
+                    return;
+                }
+
+                ConsoleKeyInfo info = Console.ReadKey();
+                if (info.Key == ConsoleKey.A)
+                {
+                    //모두에게 알려준다 
+                    InputKey();
+                }
+            }
+        }
+
+        static void OnInputTest()
+        {
+            Console.WriteLine("Input Received!");
+        }
+        
+        // lambda
+        // 일회용 함수를 만드는데 사용하는 문법이다 
 
         static void Main(string[] args)
         {
-            var listInt = new MyList<int>();
+            var inputManager = new InputManager();
+            inputManager.InputKey += OnInputTest;
+
+            while (true)
+            {
+                inputManager.Update();
+            }
         }
     }
 }
