@@ -86,13 +86,20 @@
 
         static void Main(string[] args)
         {
-            var inputManager = new InputManager();
-            inputManager.InputKey += OnInputTest;
-
-            while (true)
-            {
-                inputManager.Update();
-            }
+            // var inputManager = new InputManager();
+            // inputManager.InputKey += OnInputTest;
+            //
+            // while (true)
+            // {
+            //     inputManager.Update();
+            // }
+            
+            // 익명 함수 
+            // var item = FindItem((Item item) => {return item.ItemType == ItemType.Weapon})
+            
+            // delegate 를 직접 선언하지 않아도 이미 만들어져있다
+            // 반환 타입이 있는 경우 Func
+            // 반환타입이 없으면 Action 
         }
     }
 }
